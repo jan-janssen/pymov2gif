@@ -4,3 +4,5 @@ dependencies:
   - numpy
   - ipywidgets
   - voila
+  - ffmpeg
+  - gifsicle
