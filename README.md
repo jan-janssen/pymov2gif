@@ -2,7 +2,7 @@
 Convert `*.mov` to `*.gif`:
 
 ## Web Interface 
-[![Open-with-Voila](https://img.shields.io/badge/Open%20with-Voila-4eafa0.svg)](https://mybinder.org/v2/gh/jan-janssen/mov2gif/master?urlpath=/voila/render/app.ipynb)
+[![Open-with-Voila](https://img.shields.io/badge/Open%20with-Voila-4eafa0.svg)](https://mybinder.org/v2/gh/jan-janssen/pymov2gif/master?urlpath=/voila/render/app.ipynb)
 
 ![Preview](convert.gif) 
 
