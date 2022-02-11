@@ -1,4 +1,4 @@
-# mov2gif
+# pymov2gif
 Convert `*.mov` to `*.gif`:
 
 ## Web Interface 
