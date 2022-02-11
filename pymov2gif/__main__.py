@@ -36,7 +36,12 @@ def command_line_parser():
     else:
         output_file = None
     if args.resolution and args.framerate:
-        convert(file=args.file, resolution=args.resolution, framerate=args.framerate, output_file=output_file)
+        convert(
+            file=args.file,
+            resolution=args.resolution,
+            framerate=args.framerate,
+            output_file=output_file,
+        )
     elif args.resolution:
         convert(file=args.file, resolution=args.resolution, output_file=output_file)
     elif args.framerate:
