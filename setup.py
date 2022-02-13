@@ -9,7 +9,7 @@ setup(
     name='pymov2gif',
     version=versioneer.get_version(),
     description='Similar to the Google authenticator just written in python.',
-    url='https://github.com/pyscioffice/mov2gif',
+    url='https://github.com/pyscioffice/pymov2gif',
     author='Jan Janssen',
     author_email='jan.janssen@outlook.com',
     license='BSD',
