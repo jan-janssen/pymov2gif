@@ -17,7 +17,6 @@ def command_line_parser():
     parser.add_argument(
         "-r",
         "--resolution",
-        action="store_true",
         help="Resolution of the output *.gif file - default: 800x600",
     )
     parser.add_argument(
