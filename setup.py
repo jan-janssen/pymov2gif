@@ -2,14 +2,17 @@
 Setuptools based setup module
 """
 from setuptools import setup, find_packages
+from pathlib import Path
 import versioneer
 
 
 setup(
     name='pymov2gif',
     version=versioneer.get_version(),
-    description='Similar to the Google authenticator just written in python.',
-    url='https://github.com/pyscioffice/pymov2gif',
+    description='Convert *.mov to *.gif',
+    long_description=Path("README.md").read_text(),
+    long_description_content_type='text/markdown',
+    url='https://github.com/jan-janssen/pymov2gif',
     author='Jan Janssen',
     author_email='jan.janssen@outlook.com',
     license='BSD',
