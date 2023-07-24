@@ -32,5 +32,9 @@ pymov2gif test.mov --resolution=800x600 --framerate=10 --output_filename=test.gi
 ## Installation 
 Both the python interface and the command line interface require `pymov2gif` to be installed via `pip`:
 ```
-pip install git+https://github.com/pyscioffice/mov2gif.git
+pip install pymov2gif
+```
+Alternatively, `pymov2gif` can be installed using conda-forge:
+```
+conda -c conda-forge pymov2gif
 ```

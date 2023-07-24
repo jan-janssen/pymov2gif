@@ -2,7 +2,7 @@
 Convert *.mov files to *.gif format
 """
 import argparse
-from pymov2gif.convert import convert
+from pymov2gif import convert
 
 
 def command_line_parser():
