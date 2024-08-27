@@ -26,3 +26,6 @@ def convert(file, resolution="800x600", framerate=10, output_file=None):
         + output_file
     )
     subprocess.check_output(command_options, shell=True, universal_newlines=True)
+
+from . import _version
+__version__ = _version.get_versions()['version']
