@@ -1,6 +1,7 @@
 """
 Convert *.mov files to *.gif format
 """
+
 import argparse
 from pymov2gif import convert
 
