@@ -20,7 +20,7 @@ jobs:
       with:
         python-version: "3.13"
     - name: Install Hatch
-      run: pip install hatch
+      run: pip install hatchling hatch-vcs
     - name: Build
       run: hatchling build -t sdist -t wheel
     - name: Publish distribution 📦 to PyPI
