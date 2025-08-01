@@ -2,7 +2,7 @@ import os
 import subprocess
 from . import _version
 
-__version__ = _version.get_versions()["version"]
+__version__ = _version.__version__
 
 
 def convert(file, resolution="800x600", framerate=10, output_file=None):

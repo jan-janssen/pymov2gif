@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pymov2gif"
+dynamic = ["version"]
+description = "Convert *.mov to *.gif"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "BSD-3-Clause" }
+authors = [
+    { name = "Jan Janssen", email = "jan.janssen@outlook.com" },
+]
+
+[project.urls]
+Homepage = "https://github.com/jan-janssen/pymov2gif"
+
+[project.scripts]
+pymov2gif = "pymov2gif.__main__:command_line_parser"
+
+[tool.hatch.build]
+include = [
+    "pymov2gif"
+]
+
+[tool.hatch.build.hooks.vcs]
+version-file = "pymov2gif/_version.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "pymov2gif"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "pymov2gif"
+]
+
+[tool.hatch.version]
+source = "vcs"
+path = "pymov2gif/_version.py"
