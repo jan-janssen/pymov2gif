@@ -1,8 +1,8 @@
 import os
 import subprocess
-from . import _version
+from importlib.metadata import version
 
-__version__ = _version.get_versions()["version"]
+__version__ = version("pymov2gif")
 
 
 def convert(file, resolution="800x600", framerate=10, output_file=None):

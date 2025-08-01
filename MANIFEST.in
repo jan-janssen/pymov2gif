@@ -1,3 +1,0 @@
-include LICENSE
-include versioneer.py
-include pymov2gif/_version.py
