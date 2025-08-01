@@ -6,7 +6,7 @@ import argparse
 from pymov2gif import convert
 
 
-def command_line_parser():
+def command_line_parser() -> None:
     """
     Main function primarly used for the command line interface
     """
