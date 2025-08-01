@@ -60,26 +60,4 @@ jobs:
       shell: bash -l {0}
       run: |
         pip install --no-deps .
-        coverage run -a -m unittest discover tests
-
-  coverage:
-    needs: [black]
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v4
-    - name: Conda config
-      shell: bash -l {0}
-      run: echo -e "channels:\n  - conda-forge\n" > .condarc
-    - uses: conda-incubator/setup-miniconda@v3
-      with:
-        python-version: '3.13'
-        miniforge-version: latest
-        condarc-file: .condarc
-        environment-file: binder/environment.yml
-    - name: Test
-      shell: bash -l {0}
-      run: |
-        pip install --no-deps .
-        coverage run -a -m unittest discover tests
-        coverage combine
-        coverage report
+        python -m unittest discover tests
