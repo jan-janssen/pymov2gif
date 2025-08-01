@@ -7,21 +7,21 @@ on:
 # based on https://github.com/pypa/gh-action-pypi-publish
 jobs:
   build:
+    if: startsWith(github.event.ref, 'refs/tags') || github.event_name == 'release'
     runs-on: ubuntu-latest
-
+    environment:
+      name: pypi
+      url: https://pypi.org/p/${{ github.event.repository.name }}
+    permissions:
+      id-token: write
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-python@v5
       with:
-        python-version: "3.11"
-
+        python-version: "3.13"
     - name: Install Hatch
       run: pip install hatch
     - name: Build
-      run: hatch build
+      run: hatchling build -t sdist -t wheel
     - name: Publish distribution 📦 to PyPI
-      if: startsWith(github.event.ref, 'refs/tags') || github.event_name == 'release'
       uses: pypa/gh-action-pypi-publish@release/v1
-      with:
-        user: __token__
-        password: ${{ secrets.pypi_password }}
