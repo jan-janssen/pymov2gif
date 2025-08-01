@@ -1,11 +1,9 @@
 import os
 import subprocess
+from typing import Optional
 from . import _version
 
 __version__ = _version.__version__
-
-
-from typing import Optional
 
 
 def convert(
