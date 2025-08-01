@@ -5,7 +5,15 @@ from . import _version
 __version__ = _version.__version__
 
 
-def convert(file, resolution="800x600", framerate=10, output_file=None):
+from typing import Optional
+
+
+def convert(
+    file: str,
+    resolution: str = "800x600",
+    framerate: int = 10,
+    output_file: Optional[str] = None,
+) -> None:
     """
     Convert *.mov files to *.gif format
 
