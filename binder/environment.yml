@@ -7,3 +7,4 @@ dependencies:
   - gifsicle
   - setuptools
   - hatchling
+  - hatch-vcs
